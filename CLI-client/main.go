@@ -13,6 +13,9 @@ import (
 const URL ="http://localhost:8000/"
 
 func main(){
+	if len(os.Args) < 2  {
+		ManPage()
+	}
 	args := os.Args[1]
 
 	switch args {
